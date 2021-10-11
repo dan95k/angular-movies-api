@@ -1,0 +1,15 @@
+<form name="search-form" (ngSubmit)="onSubmit()">
+  <mat-form-field
+    appearance="outline"
+    class="full-width-field"
+    [style.width.px]="400"
+  >
+    <mat-label>Movie Name</mat-label>
+    <input matInput value="" name="movieName" [(ngModel)]="movieName" />
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" [style.width.px]="400">
+    Search
+    <mat-icon>search</mat-icon>
+  </button>
+</form>

@@ -1,0 +1,11 @@
+.mat-spinner {
+    margin-top: 20px;
+    position: relative;
+    margin-left: 40%;
+}
+img {
+    width: auto; 
+    height: 300px;
+    border: 2px solid silver;
+    border-radius: 8px;
+}

@@ -1,0 +1,50 @@
+<!-- show if movie data isnt null -->
+<div *ngIf="movieData" style="text-align: center">
+  <mat-card-title
+    >{{ this.movieData.Title }} ({{ this.movieData.Year }})</mat-card-title
+  >
+  <mat-card-subtitle>{{ this.movieData.Genre }}</mat-card-subtitle>
+  <img mat-card-image src="{{ this.movieData.Poster }}" alt="Movie Poster" />
+  <mat-card-content>
+    <mat-card-subtitle>
+      {{ this.movieData.Director }}, {{ this.movieData.Writer }},
+      {{ this.movieData.Actors }}</mat-card-subtitle
+    >
+
+    <p>{{ this.movieData.Plot }}</p>
+  </mat-card-content>
+
+  <mat-accordion>
+    <mat-expansion-panel
+      (opened)="panelOpenState = true"
+      (closed)="panelOpenState = false"
+    >
+      <mat-expansion-panel-header>
+        <!-- <mat-panel-title> Self aware panel </mat-panel-title> -->
+        <mat-panel-description>
+          {{ panelOpenState ? "Show Less" : "Show More" }}
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <p>
+        Duration: <b>{{ this.movieData.Runtime }}</b>
+      </p>
+      <p>
+        Rated: <b>{{ this.movieData.Rated }}</b>
+      </p>
+      <p>
+        Available Languages: <b>{{ this.movieData.Language }}</b>
+      </p>
+      <p>
+        Awards: <b>{{ this.movieData.Awards }}</b>
+      </p>
+      <p>
+        Production: <b>{{ this.movieData.Production }}</b>
+      </p>
+      <p>
+        IMDb rating: <b>{{ this.movieData.imdbRating }}</b>
+      </p>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>
+
+<mat-spinner *ngIf="isFetching"></mat-spinner>
