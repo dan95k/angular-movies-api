@@ -1,27 +1,14 @@
 # MoviesApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.9.
+An application where you can search for a movie title and get relevant information about the movie such as release data, actors names and more
 
-## Development server
+to run the probject you will need to generate an API key from `https://www.omdbapi.com/` and insert it into API_KEY field in `src\environments\environment.ts`
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+<p align="center">
+  <img height=150 src="https://user-images.githubusercontent.com/44104789/136777789-3fca9802-ea5c-4bb2-9b7e-cbfea8e8c91d.png">
+</p>
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/44104789/136777569-8e12ed5f-5f4f-4af2-9001-ba63223202ea.png">
+</p>
